@@ -4,12 +4,42 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="apple-touch-icon" sizes="180x180" href="./src/img/favicon/dark-favi-app.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./src/img/favicon/dark-favi.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="./src/css/reset.css" />
+        <link rel="stylesheet" href="./src/css/template.css" />]
+        <link rel="stylesheet" href="./src/css/header.css" />
         <title>Marcus Dantas</title>
     </head>
     <body>
         <header>
-            <div class="header-container"></div>
+            <div class="header-container">
+                <img src="./src/img/logo-dark.png" alt="Logo" id="logo-dark" />
+                <img src="./src/img/logo-light.png" alt="Logo" id="logo-light" />
+                <div class="menu">
+                    <nav>
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Tech Stack</a></li>
+                            <li><a href="">Projects</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <ion-icon name="menu-outline" class="hamburger-menu"></ion-icon>
+                </div>
+                <div class="theme-button">
+                    <input type="checkbox" id="toggle-theme"/>
+                    <label for="toggle-theme" class="theme-label">
+                        <ion-icon name="sunny"></ion-icon>
+                        <ion-icon name="moon"></ion-icon>
+                        <span class="ball"></span>
+                    </label>
+                </div>
+            </div>
         </header>
         <main>
             <div class="hero"></div>
@@ -18,5 +48,8 @@
             <div class="container projects-container"></div>
         </main>
         <footer></footer>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script src="./src/js/menu.js"></script>
     </body>
 </html>

@@ -1,0 +1,44 @@
+:root {
+    --body-background: #103351;
+    --dark-display: block;
+    --light-display: none;
+    --contrast: #000000;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    background: var(--body-background);
+    font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 0px;
+}
+
+h2 {
+    font-size: 48px;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+}
+
+@media (max-width: 576px) {
+    h2 {
+        font-size: 30px;
+        font-weight: 700;
+    }
+}
