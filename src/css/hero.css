@@ -1,0 +1,99 @@
+.hero {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 600px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    padding-top: 150px;
+    background: var(--hero-background);
+    border: 3px solid var(--highlight-color);
+}
+
+.hero .banner {
+    width: fit-content;
+    height: fit-content;
+    padding: 30px 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    border-radius: 15px;
+    text-align: center;
+    min-width: 300px;
+    color: var(--primary-color);
+    background-color: var(--transparent-color);
+}
+
+.hero .banner button {
+    border-radius: 5px;
+    width: 60%;
+    font-size: 20px;
+    height: 40px;
+    transition: all 0.3s;
+    min-width: 150px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.hero .banner button:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.ocean {
+    height: 5%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #015871;
+}
+
+.wave {
+    background: url("../img/wave.svg") repeat-x;
+    position: absolute;
+    top: -198px;
+    width: 6400px;
+    height: 198px;
+    animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+    transform: translate3d(0, 0, 0);
+}
+
+.wave:nth-of-type(2) {
+    top: -175px;
+    animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite, swell 7s ease -1.25s infinite;
+    opacity: 1;
+}
+
+@keyframes wave {
+    0% {
+        margin-left: 0;
+    }
+    100% {
+        margin-left: -1600px;
+    }
+}
+
+@keyframes swell {
+    0%,
+    100% {
+        transform: translate3d(0, -25px, 0);
+    }
+    50% {
+        transform: translate3d(0, 5px, 0);
+    }
+}
+
+@media (max-width: 576px) {
+    .hero {
+        width: 100%;
+        border-radius: 0;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        padding-top: 100px;
+        height: 500px;
+    }
+}

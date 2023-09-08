@@ -71,7 +71,7 @@ nav a:hover {
 }
 
 .theme-button .theme-label {
-    background-color: var(--contrast);
+    background-color: var(--contrast-color);
     width: 70px;
     height: 35px;
     border-radius: 50px;
