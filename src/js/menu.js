@@ -32,11 +32,11 @@ function setHamburgerMenu() {
     });
 }
 
-document.addEventListener("DOMContentLoaded", function () {
+window.onload = () => {
     nav = document.querySelector("nav");
     menu = document.querySelector("nav ul");
     menuButton = document.querySelector(".hamburger-menu");
     notMenu = document.querySelector("body");
 
     setHamburgerMenu();
-});
+};

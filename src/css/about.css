@@ -1,0 +1,145 @@
+.about {
+    width: 85%;
+    position: relative;
+    background: var(--primary-color);
+    padding: 25px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 350px;
+    transition: transform 0.2s linear;
+}
+
+.about p {
+    color: var(--secondary-color);
+    padding: 10px;
+    line-height: 30px;
+    font-size: 19px;
+    text-align: left;
+    font-weight: 700;
+    align-self: end;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.about p:nth-child(2) {
+    margin-left: 170px;
+    font-size: 17px;
+}
+
+.button-container {
+    width: 100%;
+    justify-content: end;
+    display: flex;
+    gap: 20px;
+}
+
+.about button {
+    font-weight: 700;
+    border-radius: 5px;
+    font-size: 20px;
+    height: 45px;
+    transition: all 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.about button:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.about ion-icon {
+    font-size: 27px;
+}
+
+.img-container {
+    position: absolute;
+    left: -100px;
+    top: 30px;
+    width: 275px;
+    height: 300px;
+    background: var(--contrast-color);
+    display: flex;
+    place-content: center;
+    place-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.img-container::before {
+    content: "";
+    position: absolute;
+    width: 76%;
+    background-image: linear-gradient(180deg, var(--highlight-color), var(--secondary-color));
+    height: 140%;
+    animation: rotBGimg 3s linear infinite;
+    transition: all 0.2s linear;
+}
+
+@keyframes rotBGimg {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.img-container::after {
+    content: "";
+    position: absolute;
+    background: var(--contrast-color);
+    inset: 5px;
+    border-radius: 15px;
+}
+
+.img-container img {
+    border-radius: 15px;
+    height: 96.5%;
+    z-index: 1;
+}
+
+@media (max-width: 850px) {
+    .about {
+        width: 95%;
+        margin-top: 100px;
+    }
+    .button-container {
+        justify-content: center;
+    }
+
+    .about p {
+        align-self: auto;
+    }
+
+    .about p:nth-child(2) {
+        margin-top: 135px;
+        margin-left: 0;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .img-container {
+        top: -80px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .about button {
+        font-size: 14px;
+        gap: 2px;
+        width: 48%;
+    }
+    
+    .img-container {
+        width: 200px;
+        height: 218px;
+    }
+}

@@ -59,7 +59,7 @@ nav a:hover {
     background-color: #103351;
 }
 
-.theme-button {
+.theme-container {
     width: 150px;
     display: flex;
     justify-content: end;
@@ -70,7 +70,7 @@ nav a:hover {
     position: absolute;
 }
 
-.theme-button .theme-label {
+.theme-container .theme-label {
     background-color: var(--contrast-color);
     width: 70px;
     height: 35px;
@@ -84,17 +84,17 @@ nav a:hover {
     transition: background-color 0.3s;
 }
 
-.theme-button ion-icon:first-child {
+.theme-container ion-icon:first-child {
     color: #f1c40f;
     font-size: 25px;
 }
 
-.theme-button ion-icon:nth-child(2) {
+.theme-container ion-icon:nth-child(2) {
     color: #f39c12;
     font-size: 25px;
 }
 
-.theme-button .ball {
+.theme-container .ball {
     background-color: #ffffff;
     width: 30px;
     height: 30px;

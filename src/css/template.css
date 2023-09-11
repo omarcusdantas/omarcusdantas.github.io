@@ -8,6 +8,7 @@
     --primary-color: #103351;
     --secondary-color: #ffffff;
     --transparent-color: rgba(255, 255, 255, 0.692);
+    --container-background-color: rgba(255, 255, 255, 0.068);
 }
 
 * {
@@ -40,6 +41,13 @@ a {
 button {
     cursor: pointer;
     border: none;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+button:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
 main {
@@ -51,6 +59,29 @@ main {
     max-width: 1200px;
     margin: 150px auto 0 auto;
     padding: 0 20px;
+}
+
+.container {
+    margin-top: 40px;
+    background-color: var(--container-background-color);
+    width: 100%;
+    border-radius: 20px;
+    padding: 40px 80px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+}
+
+.container h2 {
+    background-color: #0097bd;
+    border-radius: 20px;
+    width: 300px;
+    padding: 15px;
+    font-size: 35px;
+    margin-bottom: 40px;
+    color: var(--contrast-color);
 }
 
 @media (max-width: 950px) {
@@ -67,5 +98,16 @@ main {
 
     main {
         padding: 0;
+    }
+
+    .container {
+        padding: 10px;
+        margin-top: 20px;
+        border-radius: 0;
+    }
+
+    .container h2 {
+        font-size: 25px;
+        margin-bottom: 20px;
     }
 }

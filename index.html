@@ -10,9 +10,10 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="./src/css/reset.css" />
-        <link rel="stylesheet" href="./src/css/template.css" />]
+        <link rel="stylesheet" href="./src/css/template.css" />
         <link rel="stylesheet" href="./src/css/header.css" />
         <link rel="stylesheet" href="./src/css/hero.css" />
+        <link rel="stylesheet" href="./src/css/about.css" />
         <title>Marcus Dantas</title>
     </head>
     <body>
@@ -32,7 +33,7 @@
                     </nav>
                     <ion-icon name="menu-outline" class="hamburger-menu"></ion-icon>
                 </div>
-                <div class="theme-button">
+                <div class="theme-container">
                     <input type="checkbox" id="toggle-theme"/>
                     <label for="toggle-theme" class="theme-label">
                         <ion-icon name="sunny"></ion-icon>
@@ -53,7 +54,20 @@
                     <div class="wave"></div>
                 </div>
             </div>
-            <div class="container"></div>
+            <div class="container">
+                <h2>Welcome &#128588</h2>
+                <div class="about">
+                    <div class="img-container">
+                        <img src="./src/img/profile.png" alt="">
+                    </div>
+                    <p>Thank you for visiting this website! My name is Marcus Dantas and I am a Fullstack Developer. I am a highly organized and motivated person with a passion for programming and technology. A lifelong learner, always seeking to improve skills and to share knowledge with others.</p>
+                    <p>Feel free to explore!</p>
+                    <div class="button-container">
+                        <button><ion-icon name="document-text"></ion-icon></ion-icon>Resume</button>
+                        <button><ion-icon name="logo-github"></ion-icon>Github</button>
+                    </div>
+                </div>
+            </div>
             <div class="container"></div>
             <div class="container projects-container"></div>
         </main>
@@ -61,5 +75,6 @@
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
         <script src="./src/js/menu.js"></script>
+        <script src="./src/js/about.js"></script>
     </body>
 </html>
