@@ -29,6 +29,8 @@ const lighThemeVariables = {
 const lightFaviconUrl = "./src/img/favicon/light-favi.png";
 const darkFaviconUrl = "./src/img/favicon/dark-favi.png";
 
+const toggleThemeCheckbox = document.querySelector("#toggle-theme");
+
 function toggleTheme(checked) {
     const favicon = document.querySelector('link[rel="icon"]');
 
@@ -48,7 +50,7 @@ function setCSSVariables(variables) {
     }
 }
 
-const toggleThemeCheckbox = document.querySelector("#toggle-theme");
+toggleTheme(toggleThemeCheckbox.checked);
 toggleThemeCheckbox.addEventListener("change", function () {
     toggleTheme(toggleThemeCheckbox.checked);
 });
