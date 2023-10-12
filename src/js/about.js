@@ -19,7 +19,5 @@ function translateAboutCard() {
     div.style.transform = `translateX(${newX})`;
 }
 
-window.addEventListener("load", () => {
-    translateAboutCard();
-    document.addEventListener("scroll", translateAboutCard);
-});
+translateAboutCard();
+document.addEventListener("scroll", translateAboutCard);

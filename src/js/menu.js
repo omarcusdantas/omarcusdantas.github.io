@@ -1,4 +1,7 @@
-let nav, menu, menuButton, notMenu;
+const nav = document.querySelector("nav");
+const menu = document.querySelector("nav ul");
+const menuButton = document.querySelector(".hamburger-menu");
+const notMenu = document.querySelector("body");
 const timeMenuAnimationMs = 250;
 
 function toggleMenuHeight() {
@@ -31,11 +34,4 @@ function setHamburgerMenu() {
     });
 }
 
-window.addEventListener("load", () => {
-    nav = document.querySelector("nav");
-    menu = document.querySelector("nav ul");
-    menuButton = document.querySelector(".hamburger-menu");
-    notMenu = document.querySelector("body");
-
-    setHamburgerMenu();
-});
+setHamburgerMenu();

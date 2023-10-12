@@ -48,9 +48,7 @@ function setCSSVariables(variables) {
     }
 }
 
-window.addEventListener("load", () => {
-    const toggleThemeCheckbox = document.querySelector("#toggle-theme");
-    toggleThemeCheckbox.addEventListener("change", function () {
-        toggleTheme(toggleThemeCheckbox.checked);
-    });
+const toggleThemeCheckbox = document.querySelector("#toggle-theme");
+toggleThemeCheckbox.addEventListener("change", function () {
+    toggleTheme(toggleThemeCheckbox.checked);
 });
