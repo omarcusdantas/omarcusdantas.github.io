@@ -18,24 +18,6 @@
     animation: tremble 0.4s infinite;
 }
 
-@keyframes tremble {
-    0% {
-        transform: translate(0, 0);
-    }
-    25% {
-        transform: translate(-2px, -2px);
-    }
-    50% {
-        transform: translate(2px, 2px);
-    }
-    75% {
-        transform: translate(-2px, 2px);
-    }
-    100% {
-        transform: translate(2px, -2px);
-    }
-}
-
 .skill h3 {
     margin-top: 10px;
     height: 40px;

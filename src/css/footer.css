@@ -38,8 +38,16 @@ footer p {
     margin: 30px 0;
 }
 
+.contact-links li {
+    transition: transform 0.3s ease;
+}
+
+.contact-links li:hover {
+    animation: tremble 0.4s infinite;
+}
+
 .contact-links li:first-child {
-    color: rgba(255, 255, 255, 0.788);
+    color: var(--transparent-color);
 }
 
 .contact-links li:last-child {
