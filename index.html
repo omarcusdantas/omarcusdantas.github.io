@@ -16,6 +16,7 @@
         <link rel="stylesheet" href="./src/css/about.css" />
         <link rel="stylesheet" href="./src/css/skills.css" />
         <link rel="stylesheet" href="./src/css/projects.css" />
+        <link rel="stylesheet" href="./src/css/footer.css">
         <title>Marcus Dantas</title>
     </head>
     <body>
@@ -28,9 +29,9 @@
                         <ul>
                             <li><a href="">Home</a></li>
                             <li><a href="#about-scroll-position">About</a></li>
-                            <li><a href="">Tech Stack</a></li>
-                            <li><a href="">Projects</a></li>
-                            <li><a href="">Contact</a></li>
+                            <li><a href="#techstack-scroll-position">Tech Stack</a></li>
+                            <li><a href="#projects-scroll-position">Projects</a></li>
+                            <li><a href="#contact-scroll-position">Contact</a></li>
                         </ul>
                     </nav>
                     <ion-icon name="menu-outline" class="hamburger-menu"></ion-icon>
@@ -66,7 +67,7 @@
                     <p>Feel free to explore!</p>
                     <div class="button-container">
                         <button><a href="resume.pdf" target="_blank"><ion-icon name="document-text"></ion-icon></ion-icon>Resume</a></button>
-                        <button><a href="https://github.com/omarcusdantas" target="_blank"><ion-icon name="logo-github"></ion-icon>Github</a></button>
+                        <button id="techstack-scroll-position"><a href="https://github.com/omarcusdantas" target="_blank"><ion-icon name="logo-github"></ion-icon>Github</a></button>
                     </div>
                 </div>
             </div>
@@ -143,7 +144,7 @@
                         <a href="https://skillicons.dev" target="_blank">
                             <img src="https://skillicons.dev/icons?i=prisma" alt="Prisma" />
                         </a>
-                        <h3>Prisma</h3>
+                        <h3 id="projects-scroll-position">Prisma</h3>
                     </div>
                 </div>
             </div>
@@ -236,7 +237,14 @@
                 </div>
             </div>
         </main>
-        <footer></footer>
+        <footer id="contact-scroll-position">
+            <h2>Contact</h2>
+            <p>Feel free to send an email or a whatsapp message. Questions, ideas and constructive criticisms are more than welcome 🙌</p>
+            <ul class="contact-links">
+                <li><a href="mailto:marvinsd@gmail.com"><ion-icon name="mail"></ion-icon></a></li>
+                <li><a href="https://wa.me//5561995166051?text=Hey,%20got%20your%20number%20from%20your%20portfolio%20website%20:)" target="_blank"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
+            </ul>
+        </footer>
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
         <script src="./src/js/menu.js"></script>
