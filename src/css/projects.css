@@ -1,0 +1,82 @@
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project {
+    background: var(--primary-color);
+    border: 3px solid var(--transparent-color);
+    border-radius: 10px;
+    width: 320px;
+    height: 491px;
+    overflow: hidden;
+}
+
+.project img {
+    width: 100%;
+}
+
+.project-details {
+    padding: 8px;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    height: 57px;
+}
+
+.tags span {
+    padding: 4px 8px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 50px;
+    font-size: 16px;
+    color: var(--secondary-color);
+}
+
+.project h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--highlight-color);
+    margin-top: 15px;
+}
+
+.project p {
+    font-size: 16px;
+    color: var(--secondary-color);
+    line-height: 150%;
+    margin: 15px 0;
+}
+
+.project .buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 30px;
+}
+
+.project button {
+    width: 60px;
+    border-radius: 5px;
+    font-size: 20px;
+    height: 45px;
+    transition: all 0.3s;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    padding-top: 5px;
+}
+
+.project button:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.project ion-icon {
+    font-size: 27px;
+}
+

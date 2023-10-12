@@ -1,6 +1,5 @@
-// Menu variables
 let nav, menu, menuButton, notMenu;
-const timeMenuAnimation = 250;
+const timeMenuAnimationMs = 250;
 
 function toggleMenuHeight() {
     menu.classList.toggle("menu-height");
@@ -12,11 +11,11 @@ function toggleNav() {
 
 function disableMenu() {
     toggleMenuHeight();
-    setTimeout(toggleNav, timeMenuAnimation);
+    setTimeout(toggleNav, timeMenuAnimationMs);
     notMenu.removeEventListener("click", disableMenu);
 }
 
-function setDisableMenu() {
+function setDisableMenuEventHandler() {
     notMenu.addEventListener("click", disableMenu);
 }
 
@@ -28,7 +27,7 @@ function setHamburgerMenu() {
         }
         toggleNav();
         setTimeout(toggleMenuHeight, 1);
-        setTimeout(setDisableMenu, timeMenuAnimation);
+        setTimeout(setDisableMenuEventHandler, timeMenuAnimationMs);
     });
 }
 
