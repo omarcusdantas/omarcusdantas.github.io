@@ -35,18 +35,14 @@ h2 {
 }
 
 a {
-    color: inherit;
-    text-decoration: none;
-}
-
-button {
     cursor: pointer;
     border: none;
     background-color: var(--primary-color);
     color: var(--secondary-color);
+    text-decoration: none;
 }
 
-button:hover {
+a:hover {
     background-color: var(--secondary-color);
     color: var(--primary-color);
 }

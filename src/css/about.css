@@ -28,14 +28,14 @@
     font-size: 17px;
 }
 
-.about .button-container {
+.about .links-container {
     width: 100%;
     justify-content: end;
     display: flex;
     gap: 20px;
 }
 
-.about button {
+.about a {
     padding: 10px 20px;
     font-weight: 700;
     border-radius: 5px;
@@ -44,16 +44,13 @@
     transition: all 0.3s;
     background-color: var(--secondary-color);
     color: var(--primary-color);
-}
-
-.about a {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
 }
 
-.about button:hover {
+.about a:hover {
     background-color: var(--primary-color);
     color: var(--secondary-color);
 }
@@ -116,7 +113,7 @@
         margin-top: 100px;
     }
 
-    .about .button-container {
+    .about .links-container {
         justify-content: center;
     }
 
@@ -139,7 +136,7 @@
         height: 218px;
     }
 
-    .about button {
+    .about a {
         font-size: 14px;
         gap: 2px;
         width: 48%;

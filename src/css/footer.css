@@ -38,6 +38,11 @@ footer p {
     margin: 30px 0;
 }
 
+.contact-links a {
+    background-color: transparent;
+    display: flex;
+}
+
 .contact-links li {
     transition: transform 0.3s ease;
 }
@@ -46,10 +51,10 @@ footer p {
     animation: tremble 0.4s infinite;
 }
 
-.contact-links li:first-child {
+.contact-links li:first-child a {
     color: var(--transparent-color);
 }
 
-.contact-links li:last-child {
+.contact-links li:last-child a {
     color: #008800;
 }

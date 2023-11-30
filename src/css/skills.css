@@ -10,6 +10,10 @@
     width: 60px;
 }
 
+.skills a {
+    background-color: transparent;
+}
+
 .skill {
     transition: transform 0.3s ease;
 }
